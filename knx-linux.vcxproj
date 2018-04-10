@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{819E55F9-05A8-454D-B771-4A99F775DD87}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="VisualGDBPackageDefinitions">
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+  </PropertyGroup>
+  <ImportGroup Label="VisualGDBFindComponents">
+    <Import Project="$(LOCALAPPDATA)\VisualGDB\FindComponents.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0000\include\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0000\include\x86_64-linux-gnu\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0000\include\c++\6\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0000\include\x86_64-linux-gnu;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)knx-linux-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)knx-linux-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0000\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\Suzail\0000\include\x86_64-linux-gnu;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="knx-linux-Debug.vgdbsettings" />
+    <None Include="knx-linux-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="knx\address_table_object.h" />
+    <ClInclude Include="knx\apdu.h" />
+    <ClInclude Include="knx\application_layer.h" />
+    <ClInclude Include="knx\application_program_object.h" />
+    <ClInclude Include="knx\association_table_object.h" />
+    <ClInclude Include="knx\bau.h" />
+    <ClInclude Include="knx\bau57B0.h" />
+    <ClInclude Include="knx\bits.h" />
+    <ClInclude Include="knx\cemi_frame.h" />
+    <ClInclude Include="knx\data_link_layer.h" />
+    <ClInclude Include="knx\datapoint_types.h" />
+    <ClInclude Include="knx\device_object.h" />
+    <ClInclude Include="knx\group_object.h" />
+    <ClInclude Include="knx\group_object_table_object.h" />
+    <ClInclude Include="knx\interface_object.h" />
+    <ClInclude Include="knx\ip_parameter_object.h" />
+    <ClInclude Include="knx\knx_types.h" />
+    <ClInclude Include="knx\memory.h" />
+    <ClInclude Include="knx\network_layer.h" />
+    <ClInclude Include="knx\npdu.h" />
+    <ClInclude Include="knx\platform.h" />
+    <ClInclude Include="knx\property_types.h" />
+    <ClInclude Include="knx\save_restore.h" />
+    <ClInclude Include="knx\table_object.h" />
+    <ClInclude Include="knx\tpdu.h" />
+    <ClInclude Include="knx\transport_layer.h" />
+    <ClInclude Include="linux_platform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="knx\address_table_object.cpp" />
+    <ClCompile Include="knx\apdu.cpp" />
+    <ClCompile Include="knx\application_layer.cpp" />
+    <ClCompile Include="knx\application_program_object.cpp" />
+    <ClCompile Include="knx\association_table_object.cpp" />
+    <ClCompile Include="knx\bau.cpp" />
+    <ClCompile Include="knx\bau57B0.cpp" />
+    <ClCompile Include="knx\bits.cpp" />
+    <ClCompile Include="knx\cemi_frame.cpp" />
+    <ClCompile Include="knx\data_link_layer.cpp" />
+    <ClCompile Include="knx\datapoint_types.cpp" />
+    <ClCompile Include="knx\device_object.cpp" />
+    <ClCompile Include="knx\group_object.cpp" />
+    <ClCompile Include="knx\group_object_table_object.cpp" />
+    <ClCompile Include="knx\ip_parameter_object.cpp" />
+    <ClCompile Include="knx\memory.cpp" />
+    <ClCompile Include="knx\network_layer.cpp" />
+    <ClCompile Include="knx\npdu.cpp" />
+    <ClCompile Include="knx\table_object.cpp" />
+    <ClCompile Include="knx\tpdu.cpp" />
+    <ClCompile Include="knx\transport_layer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="linux_platform.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
