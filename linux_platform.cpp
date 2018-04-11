@@ -61,6 +61,13 @@ void LinuxPlatform::mdelay(uint32_t millis)
 
 void LinuxPlatform::macAddress(uint8_t* data)
 {
+    // hardcode some address
+    data[0] = 0x08;
+    data[1] = 0x00;
+    data[2] = 0x27;
+    data[3] = 0x6c;
+    data[4] = 0xa8;
+    data[5] = 0x2a;
 }
 
 void LinuxPlatform::restart()
