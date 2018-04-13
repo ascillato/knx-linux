@@ -187,5 +187,8 @@
     <ClCompile Include="knx\memory.cpp">
       <Filter>Source files\knx</Filter>
     </ClCompile>
+    <ClCompile Include="knx\interface_object.cpp">
+      <Filter>Source files\knx</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

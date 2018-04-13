@@ -121,6 +121,7 @@
     <ClCompile Include="knx\device_object.cpp" />
     <ClCompile Include="knx\group_object.cpp" />
     <ClCompile Include="knx\group_object_table_object.cpp" />
+    <ClCompile Include="knx\interface_object.cpp" />
     <ClCompile Include="knx\ip_parameter_object.cpp" />
     <ClCompile Include="knx\memory.cpp" />
     <ClCompile Include="knx\network_layer.cpp" />
